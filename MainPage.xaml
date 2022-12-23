@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GaugeExample.MainPage"
+             xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges">
+
+    <gauge:SfLinearGauge Orientation="Vertical" HeightRequest="500" HorizontalOptions="Center"
+                         Minimum="10" Maximum="130" Interval="20" 
+                         IsInversed="True" TickPosition="Outside" LabelPosition="Outside"
+                         LabelFormat="## °C">
+        <gauge:SfLinearGauge.LabelStyle>
+            <gauge:GaugeLabelStyle TextColor="Blue" FontAttributes="Bold" ></gauge:GaugeLabelStyle>
+        </gauge:SfLinearGauge.LabelStyle>
+        <gauge:SfLinearGauge.Ranges>
+            <gauge:LinearRange StartValue="10" EndValue="53" Fill="#ffF45656" Position="Cross"></gauge:LinearRange>
+            <gauge:LinearRange StartValue="53" EndValue="83" Fill="#ffFFC93E" Position="Cross"></gauge:LinearRange>
+            <gauge:LinearRange StartValue="83" EndValue="130" Fill="#ff0DC9AB" Position="Cross"></gauge:LinearRange>
+        </gauge:SfLinearGauge.Ranges>
+        <gauge:SfLinearGauge.MarkerPointers>
+            <gauge:LinearShapePointer Value="70" Fill="Red" EnableAnimation="True"
+                                      StepFrequency="8" Position="Cross"
+                                      AnimationEasing="{x:Static Easing.BounceOut}"
+                                      ShapeHeight="25" ShapeWidth="25"></gauge:LinearShapePointer>
+        </gauge:SfLinearGauge.MarkerPointers>
+        <!--<gauge:SfLinearGauge.LineStyle>
+            <gauge:LinearLineStyle Fill="Blue" Thickness="12"></gauge:LinearLineStyle>
+        </gauge:SfLinearGauge.LineStyle>-->
+
+    </gauge:SfLinearGauge>
+   
+</ContentPage>
