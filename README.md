@@ -36,13 +36,13 @@ A range is a visual element that helps you quickly visualize where a data range 
 
 [Documentation](https://help.syncfusion.com/maui/linear-gauge/getting-started?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) 
 
-[View Demos](https://github.com/syncfusion/maui-demos/blob/master/maui/linear-gauge/overview?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) 
+[View Demos](https://github.com/syncfusion/maui-demos/?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) 
 
 [Community Forums](https://www.syncfusion.com/forums/maui?control=,sflineargauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples)
 
 [Suggest a feature or report a bug](https://www.syncfusion.com/feedback/maui?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples)
 
-[Knowledge Base](https://support.syncfusion.com/kb/cross-platforms/category/76?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples)
+[Knowledge Base](https://support.syncfusion.com/kb?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples)
 
 ## About Syncfusion .NET MAUI Controls
 
