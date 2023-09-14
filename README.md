@@ -1,6 +1,6 @@
 # Getting Started with the .NET MAUI Linear Gauge Control
 
-The [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) is a multipurpose data visualization control that displays numerical values on a linear scale either horizontally or vertically. It has a rich set of features, such as axis, ranges and pointers, that are fully customizable and extendable. A quick start .NET MAUI project that shows how to create and configure the Linear Gauge control of Syncfusion. This project also includes a code snippet to set a specific axis pointer value and customize the axis line height and width as well as how to add multiple axis ranges. 
+The [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) is a multipurpose data visualization control that displays numerical values on a linear scale either horizontally or vertically. A quick start .NET MAUI project that shows how to create and configure the Linear Gauge control of Syncfusion. This project also includes a code snippet to set a specific axis pointer value and customize the axis line height and width as well as how to add multiple axis ranges. 
 
 
 ## Project pre-requisites
@@ -36,7 +36,7 @@ A range is a visual element that helps you quickly visualize where a data range 
 
 [Documentation](https://help.syncfusion.com/maui/linear-gauge/getting-started?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) 
 
-[View Demos](https://github.com/syncfusion/maui-demos/?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) 
+[View Demos](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Gauges/SampleBrowser.Maui.Gauges/Samples/LinearGauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) 
 
 [Community Forums](https://www.syncfusion.com/forums/maui?control=,sflineargauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples)
 
