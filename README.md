@@ -1,6 +1,6 @@
 # Getting Started with the .NET MAUI Linear Gauge Control
 
-The [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) is a multipurpose data visualization control that displays numerical values on a linear scale either horizontally or vertically. A quick start .NET MAUI project that shows how to create and configure the Linear Gauge control of Syncfusion. This project also includes a code snippet to set a specific axis pointer value and customize the axis line height and width as well as how to add multiple axis ranges. 
+The [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) is a multipurpose data visualization control that displays numerical values on a linear scale either horizontally or vertically. A quick start of the .NET MAUI project shows how to create and configure the Linear Gauge control of Syncfusion. This project also includes a code snippet to set a specific axis pointer value and customize the axis line height and width as well as how to add multiple axis ranges. 
 
 
 ## Project pre-requisites
@@ -15,7 +15,7 @@ To run this application, you need to first clone the getting-started-with-the-do
 ## Features and Benefits
 
 ### Orientation
-The appearance of the .NET MAUI Linear Gauge can be set to both vertical and horizontal orientations. You can choose horizontal gauge or vertical gauge depending on your requirements.
+The appearance of the [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge) can be set to both vertical and horizontal orientations. You can choose horizontal gauge or vertical gauge depending on your requirements.
 
 ### Axis line
 The axis is a scale where a set of values can be plotted. An axis line can be customized by changing its thickness, color, corner radius, and edge styles.
@@ -46,7 +46,7 @@ A range is a visual element that helps you quickly visualize where a data range 
 
 ## About Syncfusion .NET MAUI Controls
 
-Syncfusion's [.NET MAUI UI Controls](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) library is the only suite that you will ever need to build an application since it contains over 40 high-performance, lightweight, modular, and responsive UI controls in a single package. In addition to Linear Gauge, we provide popular .NET MAUI Controls such as [DataGrid](https://www.syncfusion.com/maui-controls/maui-datagrid?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples), [Charts](https://www.syncfusion.com/maui-controls/maui-cartesian-charts?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples), [ListView](https://www.syncfusion.com/maui-controls/maui-listview?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples), and [Excel Library](https://www.syncfusion.com/document-processing/excel-framework/maui?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples).
+Syncfusion's [.NET MAUI UI Controls](https://www.syncfusion.com/maui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) library is the only suite that you will ever need to build an application since it contains over 40 high-performance, lightweight, modular, and responsive UI controls in a single package. In addition to Linear Gauge, we provide popular .NET MAUI Controls such as [DataGrid](https://www.syncfusion.com/maui-controls/maui-datagrid?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples), [Charts](https://www.syncfusion.com/maui-controls/maui-cartesian-charts?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples), [ListView](https://www.syncfusion.com/maui-controls/maui-listview?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples), and [Excel Library](https://www.syncfusion.com/document-processing/excel-framework/maui?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples).
 
 ## About Syncfusion
 
