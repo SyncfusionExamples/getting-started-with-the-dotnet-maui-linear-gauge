@@ -1,6 +1,6 @@
 # Getting Started with the .NET MAUI Linear Gauge Control
 
-The [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) is a multipurpose data visualization control that displays numerical values on a linear scale either horizontally or vertically. A quick start of the .NET MAUI project shows how to create and configure the Linear Gauge control of Syncfusion. This project also includes a code snippet to set a specific axis pointer value and customize the axis line height and width as well as how to add multiple axis ranges. 
+The [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) is a multipurpose data visualization control that displays numerical values on a linear scale either horizontally or vertically. A quick start of the .NET MAUI project that shows how to create and configure the Linear Gauge control of Syncfusion. This project also includes a code snippet to set a specific axis pointer value and customize the axis line height and width as well as how to add multiple axis ranges. 
 
 
 ## Project pre-requisites
