@@ -3,11 +3,14 @@
 The [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) is a multipurpose data visualization control that displays numerical values on a linear scale either horizontally or vertically. A quick start of the .NET MAUI project that shows how to create and configure the Linear Gauge control of Syncfusion. This project also includes a code snippet to set a specific axis pointer value and customize the axis line height and width as well as how to add multiple axis ranges. 
 
 
-## Project pre-requisites
+## Supported platforms
 
-Make sure that you have the compatible versions of Visual Studio with .NET MAUI workloads and .NET SDK version in your machine before starting to work on this project.
+.NET Multi-platform App UI (.NET MAUI) apps can be written for the following platforms:
 
-## How to run this application?
+* Android 5.0 (API 21) or higher.
+* iOS 11 or higher, using the latest release of Xcode.
+* macOS 10.15 or higher, using Mac Catalyst.
+* Windows 11 and Windows 10 version 1809 or higher, using [Windows UI Library (WinUI) 3](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/).
 
 To run this application, you need to first clone the getting-started-with-the-dotnet-maui-linear-gauge repository and then open it in Visual Studio 2022. Now, simply build and run your project to view the output.
 
