@@ -24,7 +24,7 @@ Refer to the following link for more details: [System Requirements](https://help
 ## How to run the sample
 
 1. Clone the sample and open it in Visual Studio 2022 preview.
-
+   
    *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
 
 2. Register your license key in the App.cs file as demonstrated in the following code.
@@ -40,7 +40,7 @@ Refer to the following link for more details: [System Requirements](https://help
 		}
 		
 	Refer to this [link](https://help.syncfusion.com/maui/licensing/overview) for more details.
-
+    
 3. Clean and build the application.
 
 4. Run the application.
