@@ -40,7 +40,7 @@ Refer to the following link for more details: [System Requirements](https://help
 		}
 		
 	Refer to this [link](https://help.syncfusion.com/maui/licensing/overview) for more details.
-    
+	
 3. Clean and build the application.
 
 4. Run the application.
