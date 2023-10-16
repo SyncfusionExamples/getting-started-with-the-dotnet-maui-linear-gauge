@@ -75,7 +75,7 @@ A range is a visual element that helps you quickly visualize where a data range 
 
 [View Demos](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Gauges/SampleBrowser.Maui.Gauges/Samples/LinearGauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples) 
 
-[Community Forums](https://www.syncfusion.com/forums/maui?control=,sflineargauge?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples)
+[Community Forums](https://www.syncfusion.com/forums/maui?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples)
 
 [Suggest a feature or report a bug](https://www.syncfusion.com/feedback/maui?utm_source=github&utm_medium=listing&utm_campaign=maui-Linear-gauge-github-samples)
 
