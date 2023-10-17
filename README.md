@@ -52,7 +52,7 @@ Syncfusion has no liability for any damage or consequence that may arise from us
 ## Features and Benefits
 
 ### Orientation
-The appearance of the [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge) can be set to both vertical and horizontal orientations. You can choose horizontal gauge or vertical gauge depending on your requirements.
+The appearance of the .NET MAUI Linear Gauge can be set to both vertical and horizontal orientations. You can choose horizontal gauge or vertical gauge depending on your requirements.
 
 ### Axis line
 The axis is a scale where a set of values can be plotted. An axis line can be customized by changing its thickness, color, corner radius, and edge styles.
