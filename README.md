@@ -59,7 +59,7 @@ A range is a visual element that helps you quickly visualize where a data range 
 A [pointer](https://help.syncfusion.com/maui/linear-gauge/pointers?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples) is used to indicate a specific value on an scale. The gauge has three types of pointers: shape marker pointer, content marker pointer, and bar pointer. All the pointers can be customized as needed and you can also add multiple pointers in the Linear Gauge.
 
 ### Animation
-Animate the gauge elements in a visually appealing manner when they are loaded or their values are changed.
+[Animate](https://help.syncfusion.com/maui/linear-gauge/animation?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples) the gauge elements in a visually appealing manner when they are loaded or their values are changed.
 
 ### Interaction
 The shape and content marker pointers in the Linear Gauge can be moved from one value to another by swiping or drag gestures.
