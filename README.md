@@ -4,7 +4,7 @@ The [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linea
 
 ## Creating an application using the .NET MAUI Linear Gauge
 
-The .NET MAUI Linear Gauge is a data visualization control used to display numerical values on a linear scale in either horizontal or vertical orientation. This guide will help you integrate the Linear Gauge control into your .NET MAUI application.
+This guide will help you integrate the Linear Gauge control into your .NET MAUI application.
 
 ### Step 1: Create a new .NET MAUI application in Visual Studio
 
