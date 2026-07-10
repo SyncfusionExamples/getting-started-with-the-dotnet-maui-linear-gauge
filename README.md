@@ -170,4 +170,4 @@ gauge.LineStyle = new LinearLineStyle
 this.Content = linearGauge;
 ```
 
-[![Getting started](MAUI-LinearGauge.png)]
+![Getting started](MAUI-LinearGauge.png)
