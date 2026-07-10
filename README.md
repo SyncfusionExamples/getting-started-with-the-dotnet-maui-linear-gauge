@@ -71,27 +71,23 @@ Initialize the `SfLinearGauge` and configure its axis, ranges, and pointers to d
 ```xml
 
 <gauge:SfLinearGauge Orientation="Vertical" HeightRequest="500" HorizontalOptions="Center"
-						Minimum="10" Maximum="130" Interval="20" 
-						IsInversed="True" TickPosition="Outside" LabelPosition="Outside"
-						LabelFormat="## °C">
+					 Minimum="10" Maximum="130" Interval="20" 
+					 IsInversed="True" TickPosition="Outside" LabelPosition="Outside"
+					 LabelFormat="## °C">
 	<gauge:SfLinearGauge.LabelStyle>
-		<gauge:GaugeLabelStyle TextColor="Blue" FontAttributes="Bold" ></gauge:GaugeLabelStyle>
+		<gauge:GaugeLabelStyle TextColor="Blue" FontAttributes="Bold" />
 	</gauge:SfLinearGauge.LabelStyle>
 	<gauge:SfLinearGauge.Ranges>
-		<gauge:LinearRange StartValue="10" EndValue="53" Fill="#ffF45656" Position="Cross"></gauge:LinearRange>
-		<gauge:LinearRange StartValue="53" EndValue="83" Fill="#ffFFC93E" Position="Cross"></gauge:LinearRange>
-		<gauge:LinearRange StartValue="83" EndValue="130" Fill="#ff0DC9AB" Position="Cross"></gauge:LinearRange>
+		<gauge:LinearRange StartValue="10" EndValue="53" Fill="#ffF45656" Position="Cross" />
+		<gauge:LinearRange StartValue="53" EndValue="83" Fill="#ffFFC93E" Position="Cross" />
+		<gauge:LinearRange StartValue="83" EndValue="130" Fill="#ff0DC9AB" Position="Cross" />
 	</gauge:SfLinearGauge.Ranges>
 	<gauge:SfLinearGauge.MarkerPointers>
 		<gauge:LinearShapePointer Value="70" Fill="Red" EnableAnimation="True"
-									StepFrequency="8" Position="Cross"
-									AnimationEasing="{x:Static Easing.BounceOut}"
-									ShapeHeight="25" ShapeWidth="25"></gauge:LinearShapePointer>
+								  StepFrequency="8" Position="Cross"
+								  AnimationEasing="{x:Static Easing.BounceOut}"
+								  ShapeHeight="25" ShapeWidth="25" />
 	</gauge:SfLinearGauge.MarkerPointers>
-	<!--<gauge:SfLinearGauge.LineStyle>
-		<gauge:LinearLineStyle Fill="Blue" Thickness="12"></gauge:LinearLineStyle>
-	</gauge:SfLinearGauge.LineStyle>-->
-
 </gauge:SfLinearGauge>
 ```
 
@@ -156,16 +152,6 @@ gauge.MarkerPointers.Add(new LinearShapePointer
     ShapeHeight = 25,
     ShapeWidth = 25
 });
-
-// Optional Line Style
-/*
-gauge.LineStyle = new LinearLineStyle
-{
-    Fill = Colors.Blue,
-    Thickness = 12
-};
-*/
-
 
 this.Content = linearGauge;
 ```
