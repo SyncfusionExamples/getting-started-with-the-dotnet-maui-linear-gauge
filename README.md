@@ -1,97 +1,159 @@
 # Getting Started with the .NET MAUI Linear Gauge Control
 
-The [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples) control is a multipurpose data visualization control that displays numerical values on a linear scale either horizontally or vertically. This project shows how to create and configure the Linear Gauge control of Syncfusion. This project also includes a code snippet to set a specific axis pointer value and customize the axis line height and width as well as how to add multiple axis ranges. 
+The [.NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples) control is a multipurpose data visualization control that displays numerical values on a linear scale either horizontally or vertically. This project shows how to create and configure the Linear Gauge control of Syncfusion. This project also includes a code snippet to set a specific axis pointer value and customize the axis line height and width as well as how to add multiple axis ranges.
 
-## Supported platforms
+## Creating an application using the .NET MAUI Linear Gauge
 
-.NET Multi-platform App UI (.NET MAUI) apps can be written for the following platforms:
+This guide will help you integrate the Linear Gauge control into your .NET MAUI application.
 
-* Android 5.0 (API 21) or higher.
-* iOS 11 or higher, using the latest release of Xcode.
-* macOS 10.15 or higher, using Mac Catalyst.
-* Windows 11 and Windows 10 version 1809 or higher, using [Windows UI Library (WinUI) 3](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/).
+### Step 1: Create a new .NET MAUI application in Visual Studio
 
-## Requirements to run the sample
+Go to **File > New > Project** and choose the **.NET MAUI App** template.
+Name the project and choose a location. Click **Next**.
+Select the .NET framework version and click **Create**.
 
-* [Visual Studio 2022 Preview](https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-preview) version 17.6.0 (.NET MAUI version 6.0.552) with .NET 6.0 and .NET 7.0
-* [Microsoft Visual Studio 2022](https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes) version 17.5.1 with (.NET MAUI version 6.0.552) with .NET 6.0 and .NET 7.0
-* [Visual Studio 2022 for Mac Preview](https://visualstudio.microsoft.com/vs/mac/preview/) version 17.5 (.NET MAUI version 6.0.552) with .NET 6.0 and .NET 7.0
+### Step 2: Install the Syncfusion .NET MAUI Linear Gauge NuGet package
 
-Refer to the following link for more details: [System Requirements](https://help.syncfusion.com/maui/system-requirements)
+In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+Search for `Syncfusion.Maui.Gauges` and install the latest version.
+Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## How to run the sample
+### Step 3: Register the Syncfusion handler
 
-1. Clone the sample and open it in Visual Studio 2022 preview.
-   
-   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
+`Syncfusion.Maui.Core` NuGet is a dependent package for all Syncfusion controls of .NET MAUI. In the `MauiProgram.cs` file, register the handler for Syncfusion core.
 
-2. Register your license key in the App.cs file as demonstrated in the following code.
+```csharp
+using Syncfusion.Maui.Core.Hosting;
 
-		public App()
-		{
-			//Register Syncfusion license
-			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
-		
-			InitializeComponent();
-		
-			MainPage = new MainPage();
-		}
-		
-	Refer to this [link](https://help.syncfusion.com/maui/licensing/overview) for more details.
-	
-3. Clean and build the application.
+public static class MauiProgram
+{
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
+        builder
+            .UseMauiApp<App>()
+            .ConfigureFonts(fonts =>
+            {
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+            });
 
-4. Run the application.
+        // Register Syncfusion core handler
+        builder.ConfigureSyncfusionCore();
 
-## License
+        return builder.Build();
+    }
+}
+```
 
-Syncfusion has no liability for any damage or consequence that may arise from using or viewing the samples. The samples are for demonstrative purposes. If you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
+### Step 4: Add the Linear Gauge namespace
 
-## Features and Benefits
+Import the Gauge namespace to your XAML or C# code.
 
-### Orientation
-The appearance of the .NET MAUI Linear Gauge can be set to both vertical and horizontal orientations. You can choose horizontal gauge or vertical gauge depending on your requirements.
+**XAML**
 
-### Linear range
-A range is a visual element that helps you quickly visualize where a data range falls on the axis track. You can add a child content inside the linear range. Multiple ranges with different styles can be added to a linear gauge. You can also customize the position of the range.
+```xml
+xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
+```
 
-### Pointers
-A [pointer](https://help.syncfusion.com/maui/linear-gauge/pointers?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples) is used to indicate a specific value on an scale. The gauge has three types of pointers: shape marker pointer, content marker pointer, and bar pointer. All the pointers can be customized as needed and you can also add multiple pointers in the Linear Gauge.
+**C#**
 
-### Animation
-[Animate](https://help.syncfusion.com/maui/linear-gauge/animation?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples) the gauge elements in a visually appealing manner when they are loaded or their values are changed.
+```csharp
+using Syncfusion.Maui.Gauges;
+```
 
-### Interaction
-The shape and content marker pointers in the Linear Gauge can be moved from one value to another by swiping or drag gestures.
+### Step 5: Initialize the Linear Gauge
 
-## Related links
-[Learn More about .NET MAUI Linear Gauge](https://www.syncfusion.com/maui-controls/maui-linear-gauge?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)
+Initialize the `SfLinearGauge` and configure its axis, ranges, and pointers to display the gauge.
 
-[Download Free Trial](https://www.syncfusion.com/downloads/maui?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)
+**XAML**
 
-[Pricing](https://www.syncfusion.com/sales/teamlicense?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)
+```xml
 
-[Documentation](https://help.syncfusion.com/maui/linear-gauge/getting-started?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)
+<gauge:SfLinearGauge Orientation="Vertical" HeightRequest="500" HorizontalOptions="Center"
+					 Minimum="10" Maximum="130" Interval="20" 
+					 IsInversed="True" TickPosition="Outside" LabelPosition="Outside"
+					 LabelFormat="## °C">
+	<gauge:SfLinearGauge.LabelStyle>
+		<gauge:GaugeLabelStyle TextColor="Blue" FontAttributes="Bold" />
+	</gauge:SfLinearGauge.LabelStyle>
+	<gauge:SfLinearGauge.Ranges>
+		<gauge:LinearRange StartValue="10" EndValue="53" Fill="#ffF45656" Position="Cross" />
+		<gauge:LinearRange StartValue="53" EndValue="83" Fill="#ffFFC93E" Position="Cross" />
+		<gauge:LinearRange StartValue="83" EndValue="130" Fill="#ff0DC9AB" Position="Cross" />
+	</gauge:SfLinearGauge.Ranges>
+	<gauge:SfLinearGauge.MarkerPointers>
+		<gauge:LinearShapePointer Value="70" Fill="Red" EnableAnimation="True"
+								  StepFrequency="8" Position="Cross"
+								  AnimationEasing="{x:Static Easing.BounceOut}"
+								  ShapeHeight="25" ShapeWidth="25" />
+	</gauge:SfLinearGauge.MarkerPointers>
+</gauge:SfLinearGauge>
+```
 
-[View Demos](https://github.com/SyncfusionExamples/getting-started-with-the-dotnet-maui-linear-gauge-control?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)
+**C#**
 
-[Community Forums](https://www.syncfusion.com/forums/maui?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)
+```csharp
 
-[Suggest a feature or report a bug](https://www.syncfusion.com/feedback/maui?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)
+SfLinearGauge gauge = new SfLinearGauge
+{
+    Orientation = LinearGaugeOrientation.Vertical,
+    HeightRequest = 500,
+    HorizontalOptions = LayoutOptions.Center,
+    Minimum = 10,
+    Maximum = 130,
+    Interval = 20,
+    IsInversed = true,
+    TickPosition = LinearElementPosition.Outside,
+    LabelPosition = LinearLabelPosition.Outside,
+    LabelFormat = "## °C",
 
-[Online example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Gauges/SampleBrowser.Maui.Gauges/Samples/LinearGauge?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)
+    LabelStyle = new GaugeLabelStyle
+    {
+        TextColor = Colors.Blue,
+        FontAttributes = FontAttributes.Bold
+    }
+};
 
-## About Syncfusion .NET MAUI Controls
+// Ranges
+gauge.Ranges.Add(new LinearRange
+{
+    StartValue = 10,
+    EndValue = 53,
+    Fill = new SolidColorBrush(Color.FromArgb("#FFF45656")),
+    Position = LinearRangePosition.Cross
+});
 
-Syncfusion's [.NET MAUI UI Controls](https://www.syncfusion.com/maui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples) library is the only suite that you will ever need to build an application since it contains over 40 high-performance, lightweight, modular, and responsive UI Controls in a single package. In addition to Linear Gauge, we provide popular .NET MAUI Controls such as [DataGrid](https://www.syncfusion.com/maui-controls/maui-datagrid?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)[Charts](https://www.syncfusion.com/maui-controls/maui-cartesian-charts?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [Scheduler](https://www.syncfusion.com/maui-controls/maui-scheduler?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [ListView](https://www.syncfusion.com/maui-controls/maui-listview?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), and [Excel Library](https://www.syncfusion.com/document-processing/excel-framework/maui?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples).
+gauge.Ranges.Add(new LinearRange
+{
+    StartValue = 53,
+    EndValue = 83,
+    Fill = new SolidColorBrush(Color.FromArgb("#FFFFC93E")),
+    Position = LinearRangePosition.Cross
+});
 
-### About Syncfusion
-Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 29,000 customers and more than 1 million users, including large financial institutions, Fortune 500 companies, and global IT consultancies.
+gauge.Ranges.Add(new LinearRange
+{
+    StartValue = 83,
+    EndValue = 130,
+    Fill = new SolidColorBrush(Color.FromArgb("#FF0DC9AB")),
+    Position = LinearRangePosition.Cross
+});
 
-Today, we provide 1800+ components and frameworks for web ([Blazor](https://www.syncfusion.com/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [ASP.NET WebForms](https://www.syncfusion.com/jquery/aspnet-webforms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [Angular](https://www.syncfusion.com/angular-components?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [React](https://www.syncfusion.com/react-components?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [Vue](https://www.syncfusion.com/vue-components?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), and [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)), mobile ([Xamarin](https://www.syncfusion.com/xamarin-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [UWP](https://www.syncfusion.com/uwp-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), and [.NET MAUI](https://www.syncfusion.com/maui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)), and desktop development ([WinForms](https://www.syncfusion.com/winforms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [WPF](https://www.syncfusion.com/wpf-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [WinUI](https://www.syncfusion.com/winui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples),[UWP](https://www.syncfusion.com/uwp-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples), and [.NET MAUI](https://www.syncfusion.com/maui-controls?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples)). We provide ready-to-deploy enterprise software for dashboards, reports, data integration, and big data processing. Many customers have saved millions in licensing fees by deploying our software.
+// Marker Pointer
+gauge.MarkerPointers.Add(new LinearShapePointer
+{
+    Value = 70,
+    Fill = Colors.Red,
+    EnableAnimation = true,
+    StepFrequency = 8,
+    Position = LinearElementPosition.Cross,
+    AnimationEasing = Easing.BounceOut,
+    ShapeHeight = 25,
+    ShapeWidth = 25
+});
 
-<hr style="height:0.3px;border:none;color:lightgrey;background-color:lightgrey;" />
+this.Content = linearGauge;
+```
 
-<p align="center">
-<a href="mailto:sales@syncfusion.com?Subject=Syncfusion .NET MAUI Linear Gauge - GitHub" target="_top">sales@syncfusion.com</a> | <a href="https://www.syncfusion.com?utm_source=github&utm_medium=listing&utm_campaign=maui-linear-gauge-github-samples">www.syncfusion.com</a> | Toll Free: 1-888-9 DOTNET <br>
-</p>
+![Getting started](MAUI-LinearGauge.png)
